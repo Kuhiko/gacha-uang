@@ -7,7 +7,7 @@ function gacha(){
   const waktuMulai = new Date().getTime();
   let i = 0
   setInterval(function(){
-    if (new Date().getTime() - waktuMulai > 5000) {
+    if (new Date().getTime() - waktuMulai > 6000) {
       clearInterval
       return;
     }
@@ -70,5 +70,5 @@ tombol.addEventListener("click", function(){
   gacha();
   setTimeout(function(){
     gachaGambar();
-  }, 4000)
+  }, 6000)
 })
