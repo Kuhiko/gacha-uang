@@ -7,7 +7,7 @@ function gacha(){
   const waktuMulai = new Date().getTime();
   let i = 0
   setInterval(function(){
-    if (new Date().getTime() - waktuMulai > 6000) {
+    if (new Date().getTime() - waktuMulai > 5000) {
       clearInterval
       return;
     }
@@ -15,7 +15,7 @@ function gacha(){
     if(i == gambar.length){
       i = 0
     }
-  }, 100)
+  }, 200)
   console.log(img)
 }
 
@@ -37,7 +37,7 @@ function gachaGambar(){
  } else if(random === 12 || random === 14){
    img.setAttribute("src", "./img/50k.jpg");
  } else if(random === 9 || random === 16){
-   img.setAttribute("src", "./img/75l.jpg");
+   img.setAttribute("src", "./img/75k.jpg");
  } else if(random === 6 || random === 13){
    img.setAttribute("src", "./img/100k.jpg");
   } else{
@@ -70,5 +70,5 @@ tombol.addEventListener("click", function(){
   gacha();
   setTimeout(function(){
     gachaGambar();
-  }, 6000)
+  }, 5000)
 })
